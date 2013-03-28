@@ -1,0 +1,27 @@
+	
+== Hihglight for Asciidoc
+
+
+This repository has Hihglight configurations of Asciidoc language for Text Editors.
+
+- Notepad++ 
+- gedit
+
+
+=== Notepad++ 
+
+This is a simple highlight for notepadd++.
+
+==== How to install
+Download and save the file https://github.com/edusantana/asciidoc-highlight/raw/master/notepad%2B%2B/userDefineLang.xml[notepad%2B%2B/userDefineLang.xml] 
+
+Go to Notepad++ menu "Language/Define your language" and import that file.
+
+How to create Syntax Highlighting::
+- http://sourceforge.net/apps/mediawiki/notepad-plus/index.php?title=User_Defined_Languages 
+- http://sourceforge.net/apps/mediawiki/notepad-plus/index.php?title=Category:Syntax_Highlighting
+- http://udl20.weebly.com
+
+=== gedit
+
+Still to come.
