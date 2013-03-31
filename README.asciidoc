@@ -12,6 +12,8 @@ This repository has Hihglight configurations of Asciidoc language for Text Edito
 
 This is a simple highlight for notepadd++.
 
+NOTE: There is a video that shows how to install: http://www.youtube.com/watch?v=_i-KxSb7cJM
+
 ==== How to install
 Download and save the file https://github.com/edusantana/asciidoc-highlight/raw/master/notepad%2B%2B/userDefineLang.xml[notepad++/userDefineLang.xml] 
 
