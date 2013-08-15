@@ -43,3 +43,13 @@ mkdir -p ~/.local/share/gtksourceview-2.0/language-specs/;
 cd ~/.local/share/gtksourceview-2.0/language-specs/
 wget https://raw.github.com/edusantana/asciidoc-highlight/master/gedit/asciidoc.lang
 ----
+
+==== How to customize
+
+https://developer.gnome.org/gtksourceview/stable/
+https://developer.gnome.org/gtksourceview/stable/ch02.html
+
+=== Follow the repository to get updates
+
+Remember to follow the repository to be notified of updates.
+

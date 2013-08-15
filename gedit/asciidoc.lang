@@ -4,6 +4,9 @@
  Author (original): David Avsajanishvili <avsd05@gmail.com>
  Colaborator: Eduardo Santana <eduardo.ufpb@gmail.com>
 
+ Github: https://github.com/edusantana/asciidoc-highlight
+ Help: https://developer.gnome.org/gtksourceview/stable/lang-tutorial.html
+
  This library is free software; you can redistribute it and/or
  modify it under the terms of the GNU Library General Public
  License as published by the Free Software Foundation; either
@@ -23,7 +26,7 @@
 <language id="asciidoc" _name="AsciiDoc" version="2.0.1" _section="Markup">
   <metadata>
     <property name="mimetypes">text/asciidoc</property>
-    <property name="globs">*.asciidoc,*.asc</property>
+    <property name="globs">*.asciidoc;*.asc</property>
   </metadata>
 
   <styles>
