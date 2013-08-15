@@ -1,4 +1,3 @@
-	
 == Hihglight for Asciidoc
 
 
@@ -26,4 +25,21 @@ How to create Syntax Highlighting::
 
 === gedit
 
-Still to come.
+This file was originaly downloaded from https://launchpad.net/asciidoc-gtk-highlight
+But I'm creating new versions here on github.
+
+==== How to install
+
+.GtkSourceView version 3
+----
+mkdir -p ~/.local/share/gtksourceview-3.0/language-specs/
+cd ~/.local/share/gtksourceview-3.0/language-specs/
+wget https://raw.github.com/edusantana/asciidoc-highlight/master/gedit/asciidoc.lang
+----
+
+.GtkSourceView version 2
+----
+mkdir -p ~/.local/share/gtksourceview-2.0/language-specs/;
+cd ~/.local/share/gtksourceview-2.0/language-specs/
+wget https://raw.github.com/edusantana/asciidoc-highlight/master/gedit/asciidoc.lang
+----
