@@ -1,7 +1,7 @@
 == Hihglight for Asciidoc
 
 
-This repository has Hihglight configurations of Asciidoc language for Text Editors.
+This repository has highlight configurations of AsciiDoc language for text editors:
 
 - Notepad++ 
 - gedit
@@ -9,7 +9,7 @@ This repository has Hihglight configurations of Asciidoc language for Text Edito
 
 === Notepad++ 
 
-This is a simple highlight for notepadd++.
+This is a simple highlight for Notepad++.
 
 NOTE: There is a video that shows how to install: http://www.youtube.com/watch?v=_i-KxSb7cJM
 
