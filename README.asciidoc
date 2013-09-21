@@ -18,6 +18,8 @@ Download and save the file https://github.com/edusantana/asciidoc-highlight/raw/
 
 Go to Notepad++ menu "Language/Define your language" and import that file.
 
+CAUTION: If you are using the Notepad++ in portugese, it has a translator error. The Import and Export button are switched.
+
 How to create Syntax Highlighting::
 - http://sourceforge.net/apps/mediawiki/notepad-plus/index.php?title=User_Defined_Languages 
 - http://sourceforge.net/apps/mediawiki/notepad-plus/index.php?title=Category:Syntax_Highlighting
