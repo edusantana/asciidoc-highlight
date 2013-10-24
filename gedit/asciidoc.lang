@@ -23,7 +23,7 @@
  Boston, MA 02111-1307, USA.
 
 -->
-<language id="asciidoc" _name="AsciiDoc" version="2.0.1" _section="Markup">
+<language id="asciidoc" _name="AsciiDoc" version="2.0" _section="Markup">
   <metadata>
     <property name="mimetypes">text/asciidoc</property>
     <property name="globs">*.asciidoc;*.asc</property>
