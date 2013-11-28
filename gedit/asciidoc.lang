@@ -26,7 +26,7 @@
 <language id="asciidoc" _name="AsciiDoc" version="2.0" _section="Markup">
   <metadata>
     <property name="mimetypes">text/asciidoc</property>
-    <property name="globs">*.asciidoc;*.asc</property>
+    <property name="globs">*.asciidoc;*.asc;*.adoc</property>
   </metadata>
 
   <styles>
