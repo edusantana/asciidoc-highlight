@@ -7,7 +7,7 @@ This repository has highlight configurations of AsciiDoc language for text edito
 - gedit
 
 
-* link:CONTRIBUTING[How to contribute]
+* link:CONTRIBUTING.md[How to contribute]
 
 === Notepad++ 
 
