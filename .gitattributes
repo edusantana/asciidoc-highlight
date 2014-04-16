@@ -1,0 +1,11 @@
+*.asc text
+*.adoc text
+*.asciidoc text
+*.md text
+
+
+Makefile text
+*.c text
+*.h text
+*.out text
+*.svg binary

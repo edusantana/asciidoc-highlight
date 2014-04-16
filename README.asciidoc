@@ -1,4 +1,4 @@
-== Hihglight for Asciidoc
+== Highlight for Asciidoc
 
 
 This repository has highlight configurations of AsciiDoc language for text editors:
@@ -6,6 +6,8 @@ This repository has highlight configurations of AsciiDoc language for text edito
 - Notepad++ 
 - gedit
 
+
+* [How to contribute](CONTRIBUTING)
 
 === Notepad++ 
 
