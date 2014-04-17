@@ -57,7 +57,11 @@
     <define-regex id="asciidocBackslash">\\</define-regex>
     <define-regex id="asciidocLineBreak">[ \t]+\s*$</define-regex>
     <define-regex id="asciidocRuler">^''''\+\s*$</define-regex>
-    
+
+    <context id="text_linebreak" style-ref="markup-linebreak" extend-parent="false">
+        <match>\+\s*$</match>
+    </context>
+
     <define-regex id="macro-names">image|include|sys|sys2|eval</define-regex>
     <define-regex id="inline-macro-names">pass|latexmath|asciimath|indexterm|indexterm2|footnote|footnoteref</define-regex>
     <define-regex id="preproc-names">ifdef|ifndef|endif|unfloat|template</define-regex>
@@ -317,11 +321,8 @@
             <context id="titleline4" style-ref="struct-title" end-parent="true">
                 <match>^\+\+\++$</match>
             </context>
-        
-            <context id="text_linebreak" style-ref="markup-linebreak" extend-parent="false">
-                <match>\+\s*$</match>
-            </context>
 
+            <context ref="text_linebreak" />
             <context ref="markup" />
             <context ref="blockPreproc" />
             <context ref="setAttr" />
@@ -337,6 +338,7 @@
                 <end>^\s*$</end>
                 <include>
                     <context sub-pattern="1" where="start" style-ref="list-identifier" />
+                    <context ref="text_linebreak" />
                     <context ref="theLists" />
                     <context ref="markup" />
                     <context ref="blockPreproc" />
@@ -348,6 +350,7 @@
                 <end>^\s*$</end>
                 <include>
                     <context sub-pattern="1" where="start" style-ref="list-identifier" />
+                    <context ref="text_linebreak" />
                     <context ref="theLists" />
                     <context ref="markup" />
                     <context ref="blockPreproc" />
@@ -359,6 +362,7 @@
                 <end>^\s*$</end>
                 <include>
                     <context sub-pattern="1" where="start" style-ref="list-identifier" />
+                    <context ref="text_linebreak" />
                     <context ref="theLists" />
                     <context ref="markup" />
                     <context ref="blockPreproc" />
