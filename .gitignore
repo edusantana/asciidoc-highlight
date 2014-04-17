@@ -1,0 +1,2 @@
+# When running asciidoc on test fold:
+test/*.html
