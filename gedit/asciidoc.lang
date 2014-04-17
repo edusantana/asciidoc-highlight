@@ -35,6 +35,7 @@
     <style id="markup-strong"     _name="Strong Text"         map-to="def:statement"/>
     <style id="markup-pass"       _name="Passthrough Text"    map-to="def:special-char"/>
     <style id="markup-replace"    _name="Replacement"         map-to="def:special-char"/>
+    <style id="markup-linebreak"  _name="Line Break"          map-to="def:special-char"/>
     <style id="markup-admonition" _name="Admonition"          map-to="def:note"/>
     <style id="markup-anchor"     _name="Anchor"              map-to="def:identifier"/>
     <style id="markup-crosslink"  _name="Link"                map-to="xml:element-name"/>  
@@ -317,10 +318,14 @@
                 <match>^\+\+\++$</match>
             </context>
         
-        
+            <context id="text_linebreak" style-ref="markup-linebreak" extend-parent="false">
+                <match>\+\s*$</match>
+            </context>
+
             <context ref="markup" />
             <context ref="blockPreproc" />
             <context ref="setAttr" />
+            
         </include>
     </context>    
 
