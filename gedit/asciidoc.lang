@@ -274,7 +274,7 @@
     </context>
 
     <context id="setAttr" end-at-line-end="true" style-ref="preprocessor">
-        <start>^:[\w\s\.]+!?:([ ]|$)</start>
+        <start>^:[\w\s\.\-]+!?:([ ]|$)</start>
         <end>$</end>
     </context>
 
