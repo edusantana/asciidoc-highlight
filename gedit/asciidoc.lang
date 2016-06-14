@@ -27,6 +27,7 @@
   <metadata>
     <property name="mimetypes">text/asciidoc</property>
     <property name="globs">*.asciidoc;*.asc;*.adoc</property>
+    <property name="line-comment-start">// </property>
   </metadata>
 
   <styles>
