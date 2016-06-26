@@ -42,14 +42,10 @@ cd YOURDIR
 git clone https://github.com/edusantana/asciidoc-highlight
 ----
 
-.Create a symbolic link
+.Run install script
 ----
-mkdir -p ~/.local/share/gtksourceview-3.0/language-specs/
-cd ~/.local/share/gtksourceview-3.0/language-specs/
-ln -s YOURDIR/asciidoc-highlight/gedit/asciidoc.lang
-mkdir -p ~/.local/share/gtksourceview-2.0/language-specs/;
-cd ~/.local/share/gtksourceview-2.0/language-specs/
-ln -s YOURDIR/asciidoc-highlight/gedit/asciidoc.lang
+cd YOURDIR/asciidoc-highlight/gedit/
+./install.sh
 ----
 
 NOTE: I recommend this method because you can keep updating
