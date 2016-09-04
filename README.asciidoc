@@ -65,6 +65,7 @@ mkdir -p ~/.local/share/gtksourceview-3.0/language-specs/
 cd ~/.local/share/gtksourceview-3.0/language-specs/
 wget https://raw.github.com/edusantana/asciidoc-highlight/master/gedit/asciidoc.lang
 ----
+For system-wide installation, use the `/usr/share/gtksourceview-3.0/language-specs/` directory instead.
 
 .GtkSourceView version 2
 ----
