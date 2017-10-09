@@ -74,6 +74,19 @@ cd ~/.local/share/gtksourceview-2.0/language-specs/
 wget https://raw.github.com/edusantana/asciidoc-highlight/master/gedit/asciidoc.lang
 ----
 
+== Testing installation
+
+
+----
+wget https://github.com/edusantana/asciidoc-highlight/raw/master/test/TESTME.adoc
+gedit TESTME.adoc
+----
+
+![See this test](https://user-images.githubusercontent.com/3603111/31322651-2d94005e-ac72-11e7-81fe-29faf6745a79.png)
+
+
+NOTE: This is note an asciidoc tag, it is just to test your installation.
+
 ==== How to customize
 
 https://developer.gnome.org/gtksourceview/stable/

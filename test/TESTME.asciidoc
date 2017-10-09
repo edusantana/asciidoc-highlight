@@ -1,0 +1,3 @@
+NOTE: This is a asciidoc note.
+
+TESTME: If you see this like note, you are okay.

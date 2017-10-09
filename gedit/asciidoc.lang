@@ -202,7 +202,7 @@
                 <match>\(C\)|\(TM\)|\(R\)|(?&lt;!-)--(?!-)|\.{3}|-&gt;|&lt;-|=&gt;|&lt;=</match>
             </context>
             <context id="Admonition" style-ref="markup-admonition" extend-parent="false">
-                <match>^(NOTE|TIP|CAUTION|IMPORTANT|WARNING):(?=\s)</match>
+                <match>^(NOTE|TIP|CAUTION|IMPORTANT|WARNING|TESTME):(?=\s)</match>
             </context>
 
             <!-- MONOSPACED --> 
