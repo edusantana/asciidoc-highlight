@@ -39,17 +39,18 @@
     <style id="markup-linebreak"  _name="Line Break"          map-to="def:special-char"/>
     <style id="markup-admonition" _name="Admonition"          map-to="def:note"/>
     <style id="markup-anchor"     _name="Anchor"              map-to="def:identifier"/>
-    <style id="markup-crosslink"  _name="Link"                map-to="xml:element-name"/>  
-    <style id="markup-url"        _name="URL"                 map-to="def:underlined"/>  
+    <style id="markup-crosslink"  _name="Link"                map-to="def:identifier"/>
+    <style id="markup-url"        _name="URL"                 map-to="def:underlined"/>
+    <style id="markup-att-entry"  _name="Attribute Entry Invocation"     map-to="def:preprocessor"/>
     <style id="struct-title"      _name="Title"               map-to="def:type"/>
     <style id="struct-blocktitle" _name="Block Title"         map-to="def:identifier"/>
     <style id="struct-style"      _name="Style"               map-to="def:identifier"/>
-    <style id="par-literal"       _name="Literal"             map-to="def:string"/>  
-    <style id="block-listing"     _name="Listing"             map-to="def:comment"/>  
-    <style id="block-comment"     _name="Comment"             map-to="def:comment"/>  
-    <style id="block-boundary"    _name="Block Boundary"      map-to="def:identifier"/>  
-    <style id="macro"             _name="Macro"               map-to="def:keyword"/>  
-    <style id="preprocessor"      _name="Preprocessor"        map-to="def:preprocessor"/>  
+    <style id="par-literal"       _name="Literal"             map-to="def:string"/>
+    <style id="block-listing"     _name="Listing"             map-to="def:comment"/>
+    <style id="block-comment"     _name="Comment"             map-to="def:comment"/>
+    <style id="block-boundary"    _name="Block Boundary"      map-to="def:identifier"/>
+    <style id="macro"             _name="Macro"               map-to="def:keyword"/>
+    <style id="preprocessor"      _name="Preprocessor"        map-to="def:preprocessor"/>
     <style id="list-identifier"   _name="List Identifier"     map-to="def:special-char"/>
   </styles>
 
@@ -172,7 +173,11 @@
             
             <!-- CROSSLINKS and URLS -->
             <context id="crosslink" style-ref="markup-crosslink" extend-parent="false">
-                <match>&lt;&lt;\w+(,[^&lt;&gt;]+)?&gt;&gt;</match>
+                <!-- This was previously implemented as a <match/> but I suspect
+                something was going awry with the combination of &lt;/&gt;
+                character entities + regexes. -->
+                <start>&lt;&lt;</start>
+                <end>&gt;&gt;</end>
             </context>
             
             <!-- url with [] -->
@@ -258,7 +263,11 @@
             <context id="theAnchor" style-ref="markup-anchor" extend-parent="false">
                 <match>\[\[[^\]]+\]\]</match>
             </context>
-    
+
+            <!-- FIXME: Not exactly sure what the proper character set for an attribute entry is. -->
+            <context id="markup-att-entry" style-ref="markup-att-entry" extend-parent="false">
+                <match>\{[^\s{}:]+\}</match>
+            </context>
 
         </include>
     </context>
@@ -275,8 +284,8 @@
     </context>
 
     <context id="setAttr" end-at-line-end="true" style-ref="preprocessor">
-        <start>^:[\w\s\.\-]+!?:([ ]|$)</start>
-        <end>$</end>
+        <start>^:[\w\s.-]+!?</start>
+        <end>:</end>
     </context>
 
     <!-- TITLES/STYLES/ANCHORS -->
