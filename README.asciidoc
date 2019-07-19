@@ -59,6 +59,12 @@ git pull
 
 ===== Without cloning
 
+.GtkSourceView version 4
+----
+mkdir -p ~/.local/share/gtksourceview-4/language-specs/
+cd ~/.local/share/gtksourceview-4/language-specs/
+wget https://raw.github.com/edusantana/asciidoc-highlight/master/gedit/asciidoc.lang
+----
 .GtkSourceView version 3
 ----
 mkdir -p ~/.local/share/gtksourceview-3.0/language-specs/
