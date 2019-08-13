@@ -63,9 +63,9 @@
         <match>\+\s*$</match>
     </context>
 
-    <define-regex id="macro-names">image|include|sys|sys2|eval</define-regex>
-    <define-regex id="inline-macro-names">pass|latexmath|asciimath|indexterm|indexterm2|footnote|footnoteref</define-regex>
-    <define-regex id="preproc-names">ifdef|ifndef|endif|unfloat|template</define-regex>
+    <define-regex id="macro-names">\b(image|include|sys|sys2|eval)\b</define-regex>
+    <define-regex id="inline-macro-names">\b(pass|latexmath|asciimath|indexterm|indexterm2|footnote|footnoteref)\b</define-regex>
+    <define-regex id="preproc-names">\b(ifdef|ifndef|ifeval|endif|unfloat|template)\b</define-regex>
 
     <!-- TITLES -->
     <context id="title">
@@ -268,7 +268,7 @@
         <start>^(\%{macro-names})::[^\s\[\]]*\[</start>
         <end>\]$</end>
     </context>
-    
+
     <context id="blockPreproc" end-at-line-end="true" style-ref="preprocessor">
         <start>^(\%{preproc-names})::[^\s\[\]]*\[</start>
         <end>\]$</end>
