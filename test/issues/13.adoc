@@ -1,0 +1,25 @@
+:city: Munich
+//:city: Dneprpetrovsk
+
+= Ifdef and Ifeval Example
+
+ifdef::city[]
+This is the {city} Travel Guide.
+endif::[]
+ifndef::city[]
+This is probably not a real Travel Guide. Don't trust it.
+endif::[]
+
+ifdef::revnumber[This is version {revnumber} of the {city} Travel Guide.]
+
+== Visits to {city}
+
+Visiting {city} is a fantastic idea, whatever time of year it may be.
+
+ifeval::["{city}" == "Munich"]
+However, the best time to visit {city} is during the end of September, when
+the city is taken over by drunk tourists.
+endif::[]
+ifeval::["{city}" == "Dneprpetrovsk"]
+However, the best time to visit {city} is in January when it is coldest.
+endif::[]
