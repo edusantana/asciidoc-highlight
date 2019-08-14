@@ -1,0 +1,11 @@
+:city: Belém
+:country: Georgia
+:river: Don
+:mountain: Kilimanjaro
+
+= Attribute Entry Example
+
+* {city} is a city.
+* {country} is a country.
+* The {river} is a river.
+* The {mountain} is a mountain.
