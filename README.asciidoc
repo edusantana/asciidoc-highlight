@@ -32,6 +32,8 @@ How to create Syntax Highlighting::
 This file was originaly downloaded from https://launchpad.net/asciidoc-gtk-highlight
 But I'm creating new versions here on github.
 
+The content of https://github.com/edusantana/asciidoc-highlight/blob/master/gedit/asciidoc.lang[gedit/asciidoc.lang] will be submited to https://gitlab.gnome.org/GNOME/gtksourceview/tree/master/data/language-specs[GNOME/gtksourceview] so it can come at default installation.
+
 ==== How to install
 
 ===== Cloning repository
